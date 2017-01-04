@@ -1,0 +1,47 @@
+{
+    "author": {
+        "name": "js.koahub.com"
+    },
+    "bugs": {
+        "url": "https://github.com/einsqing/koahub-skip/issues"
+    },
+    "dependencies": {
+        "babel-runtime": "^6.18.0"
+    },
+    "description": "koahub skip middleware",
+    "devDependencies": {
+        "babel-cli": "^6.18.0",
+        "babel-core": "^6.18.2",
+        "babel-plugin-transform-runtime": "^6.15.0",
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-stage-3": "^6.17.0",
+        "mocha": "^3.1.2",
+        "should": "^11.1.1",
+        "supertest": "^2.0.1"
+    },
+    "directories": {},
+    "homepage": "https://github.com/einsqing/koahub-skip#readme",
+    "keywords": [
+        "koa",
+        "koa-unless",
+        "koahub-skip",
+        "middleware"
+    ],
+    "license": "ISC",
+    "main": "lib/index.js",
+    "maintainers": [{
+        "name": "einsqing",
+        "email": "786699892@qq.com"
+    }],
+    "name": "koahub-skip",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/einsqing/koahub-skip.git"
+    },
+    "scripts": {
+      "compile": "babel src/ --out-dir lib/ --watch --source-maps",
+      "test": "mocha test/{,**/}*.test.js --recursive --require babel-polyfill --compilers js:babel-register"
+    },
+    "version": "2.0.6"
+}
